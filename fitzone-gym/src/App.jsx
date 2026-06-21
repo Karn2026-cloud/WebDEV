@@ -1,14 +1,14 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Programs from "./components/Programs";
-import Trainers from "./components/Trainers";
-import Gallery from "./components/Gallery";
-import Pricing from "./components/Pricing";
-import Testimonials from "./components/Testimonials";
-import Contact from "./components/Contact";
-import WhatsAppButton from "./components/WhatsAppButton";
-import Footer from "./components/Footer";
+import Navbar from "./Components/Navbar";
+import Hero from "./Components/Hero";
+import About from "./Components/About";
+import Programs from "./Components/Programs";
+import Trainers from "./Components/Trainers";
+import Gallery from "./Components/Gallery";
+import Pricing from "./Components/Pricing";
+import Testimonials from "./Components/Testimonials";
+import Contact from "./Components/Contact";
+import WhatsAppButton from "./Components/WhatsAppButton";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
