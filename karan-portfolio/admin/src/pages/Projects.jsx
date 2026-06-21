@@ -3,7 +3,7 @@ import axios from "axios";
 import Sidebar from "../components/Sidebar";
 
 
-const API_URL = "http://localhost:5000/api/projects";
+const API_URL = "https://webdev-1-jsp7.onrender.com/api/projects";
 
 function Projects() {
 const [projects, setProjects] = useState([]);

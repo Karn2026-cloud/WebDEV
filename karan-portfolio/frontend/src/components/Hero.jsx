@@ -9,7 +9,7 @@ const Hero = () => {
   useEffect(() => {
 
     axios
-      .get("http://localhost:5000/api/content")
+      .get("https://webdev-1-jsp7.onrender.com/api/content")
       .then((res) => {
         setContent(res.data);
       })

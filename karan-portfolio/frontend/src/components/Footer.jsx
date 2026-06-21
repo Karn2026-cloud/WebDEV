@@ -20,7 +20,7 @@ useState({});
 useEffect(()=>{
 
 axios.get(
-"http://localhost:5000/api/settings"
+"https://webdev-1-jsp7.onrender.com/api/settings"
 )
 .then(res=>{
 

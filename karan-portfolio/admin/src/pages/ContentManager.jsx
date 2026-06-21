@@ -34,7 +34,7 @@ async()=>{
 
 const res =
 await axios.get(
-"http://localhost:5000/api/content"
+"https://webdev-1-jsp7.onrender.com/api/content"
 );
 
 setForm(res.data);
@@ -45,7 +45,7 @@ const saveContent =
 async()=>{
 
 await axios.put(
-"http://localhost:5000/api/content",
+"https://webdev-1-jsp7.onrender.com/api/content",
 form
 );
 

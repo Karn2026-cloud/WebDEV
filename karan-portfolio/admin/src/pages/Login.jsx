@@ -20,7 +20,7 @@ const Login = () => {
 
       const res =
       await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://webdev-1-jsp7.onrender.com/api/auth/login",
         {
           email,
           password

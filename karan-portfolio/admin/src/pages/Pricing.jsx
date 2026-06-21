@@ -34,7 +34,7 @@ const Pricing = () => {
 
       const res =
         await axios.get(
-          "http://localhost:5000/api/pricing"
+          "https://webdev-1-jsp7.onrender.com/api/pricing"
         );
 
       setPlans(res.data);
@@ -68,7 +68,7 @@ const Pricing = () => {
 
       await axios.post(
 
-        "http://localhost:5000/api/pricing",
+        "https://webdev-1-jsp7.onrender.com/api/pricing",
 
         {
           ...form,
@@ -120,7 +120,7 @@ const Pricing = () => {
 
       await axios.put(
 
-        `http://localhost:5000/api/pricing/${editId}`,
+        `https://webdev-1-jsp7.onrender.com/api/pricing/${editId}`,
 
         {
           ...form,
@@ -163,7 +163,7 @@ const Pricing = () => {
 
         await axios.delete(
 
-          `http://localhost:5000/api/pricing/${id}`
+          `https://webdev-1-jsp7.onrender.com/api/pricing/${id}`
 
         );
 
