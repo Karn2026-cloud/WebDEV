@@ -1,0 +1,499 @@
+@import "tailwindcss";
+
+/* =========================
+   GLOBAL
+========================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Inter,sans-serif;
+  background:#090909;
+  color:white;
+  overflow-x:hidden;
+}
+
+img{
+  display:block;
+  max-width:100%;
+}
+
+a{
+  text-decoration:none;
+}
+
+.container-custom{
+  width:100%;
+  max-width:1280px;
+  margin:auto;
+  padding:0 24px;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:1000;
+
+  background:rgba(0,0,0,.75);
+  backdrop-filter:blur(18px);
+
+  border-bottom:
+  1px solid rgba(255,255,255,.08);
+
+  transition:.4s;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  position:relative;
+}
+
+.hero-overlay{
+  background:
+  linear-gradient(
+    rgba(0,0,0,.75),
+    rgba(0,0,0,.85)
+  );
+}
+
+.hero-title{
+  font-size:clamp(4rem,9vw,7rem);
+  line-height:1;
+  font-weight:900;
+  letter-spacing:-2px;
+  text-shadow:
+  0 0 25px rgba(239,68,68,.25);
+}
+
+.hero-subtitle{
+  max-width:650px;
+  color:#d1d5db;
+  font-size:1.15rem;
+  line-height:1.8;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn-primary{
+  background:
+  linear-gradient(
+    135deg,
+    #ef4444,
+    #dc2626
+  );
+
+  color:white;
+  border:none;
+  padding:16px 36px;
+  border-radius:18px;
+  font-weight:700;
+  cursor:pointer;
+
+  transition:.4s;
+
+  box-shadow:
+  0 10px 25px rgba(239,68,68,.35);
+}
+
+.btn-primary:hover{
+  transform:translateY(-4px);
+
+  box-shadow:
+  0 20px 45px rgba(239,68,68,.45);
+}
+
+.btn-outline{
+  border:1px solid rgba(255,255,255,.2);
+  background:rgba(255,255,255,.05);
+  backdrop-filter:blur(10px);
+
+  color:white;
+
+  padding:16px 36px;
+  border-radius:18px;
+
+  transition:.4s;
+}
+
+.btn-outline:hover{
+  background:white;
+  color:black;
+}
+
+/* =========================
+   SECTION
+========================= */
+
+.section{
+  padding:110px 0;
+}
+
+.section-title{
+  text-align:center;
+  font-size:3rem;
+  font-weight:900;
+  margin-bottom:70px;
+  position:relative;
+}
+
+.section-title::after{
+  content:"";
+  position:absolute;
+  bottom:-16px;
+  left:50%;
+  transform:translateX(-50%);
+  width:90px;
+  height:4px;
+  border-radius:20px;
+  background:#ef4444;
+}
+
+.section-title.text-black{
+  color:#111827;
+}
+
+/* =========================
+   STATS
+========================= */
+
+.stats-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:24px;
+  margin-top:60px;
+}
+
+.stats-box{
+  background:
+  rgba(255,255,255,.05);
+
+  backdrop-filter:blur(15px);
+
+  border:
+  1px solid rgba(255,255,255,.08);
+
+  padding:24px;
+  border-radius:22px;
+  text-align:center;
+}
+
+.stats-box h3{
+  color:#ef4444;
+  font-size:3rem;
+  font-weight:900;
+}
+
+.stats-box p{
+  color:#d1d5db;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card{
+  background:white;
+  border-radius:28px;
+  overflow:hidden;
+
+  border:
+  1px solid rgba(0,0,0,.05);
+
+  transition:.4s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+
+  box-shadow:
+  0 20px 50px rgba(0,0,0,.15);
+}
+
+/* =========================
+   TRAINERS
+========================= */
+
+.trainer-card img{
+  width:100%;
+  height:430px;
+  object-fit:cover;
+  transition:.5s;
+}
+
+.trainer-card:hover img{
+  transform:scale(1.08);
+}
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery-image{
+  overflow:hidden;
+  border-radius:24px;
+}
+
+.gallery-image img{
+  width:100%;
+  height:320px;
+  object-fit:cover;
+  transition:.6s;
+}
+
+.gallery-image:hover img{
+  transform:scale(1.1);
+}
+
+/* =========================
+   PRICING
+========================= */
+
+.pricing-card{
+  background:#151515;
+  color:white;
+
+  padding:40px;
+
+  border-radius:28px;
+
+  border:
+  1px solid rgba(255,255,255,.08);
+
+  min-height:520px;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+
+  transition:.4s;
+}
+
+.pricing-card:hover{
+  transform:translateY(-10px);
+}
+
+.popular-plan{
+  background:
+  linear-gradient(
+    135deg,
+    #ef4444,
+    #991b1b
+  );
+
+  box-shadow:
+  0 20px 50px rgba(239,68,68,.35);
+}
+
+/* =========================
+   TESTIMONIALS
+========================= */
+
+.testimonial-card{
+  background:#151515;
+
+  border:
+  1px solid rgba(255,255,255,.08);
+
+  border-radius:24px;
+
+  padding:30px;
+
+  transition:.4s;
+}
+
+.testimonial-card:hover{
+  transform:translateY(-8px);
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-form{
+  background:
+  rgba(255,255,255,.04);
+
+  backdrop-filter:blur(18px);
+
+  border:
+  1px solid rgba(255,255,255,.08);
+
+  border-radius:28px;
+
+  padding:40px;
+}
+
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+  padding:18px;
+
+  border:none;
+  outline:none;
+
+  border-radius:14px;
+
+  background:#1f1f1f;
+  color:white;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+  box-shadow:
+  0 0 0 3px rgba(239,68,68,.25);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+  background:#050505;
+  text-align:center;
+  padding:80px 0;
+
+  border-top:
+  1px solid rgba(255,255,255,.08);
+}
+
+.footer-logo{
+  font-size:3.5rem;
+  font-weight:900;
+  color:#ef4444;
+}
+
+.footer-text{
+  color:#9ca3af;
+  margin-top:10px;
+}
+
+.footer-socials{
+  display:flex;
+  justify-content:center;
+  gap:24px;
+  margin:25px 0;
+}
+
+.footer-socials svg{
+  font-size:30px;
+  transition:.3s;
+  cursor:pointer;
+}
+
+.footer-socials svg:hover{
+  color:#ef4444;
+  transform:translateY(-4px);
+}
+
+/* =========================
+   WHATSAPP
+========================= */
+
+.whatsapp-btn{
+  position:fixed;
+  right:25px;
+  bottom:25px;
+
+  width:65px;
+  height:65px;
+
+  border-radius:50%;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  background:#25D366;
+  color:white;
+
+  z-index:1000;
+
+  animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+
+  0%{
+    box-shadow:0 0 0 0 rgba(37,211,102,.6);
+  }
+
+  70%{
+    box-shadow:0 0 0 18px rgba(37,211,102,0);
+  }
+
+  100%{
+    box-shadow:0 0 0 0 rgba(37,211,102,0);
+  }
+
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar{
+  width:8px;
+}
+
+::-webkit-scrollbar-track{
+  background:#111;
+}
+
+::-webkit-scrollbar-thumb{
+  background:#ef4444;
+  border-radius:20px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+  .section{
+    padding:80px 0;
+  }
+
+  .section-title{
+    font-size:2rem;
+  }
+
+  .hero-title{
+    font-size:3rem;
+  }
+
+  .stats-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .trainer-card img{
+    height:320px;
+  }
+
+  .pricing-card{
+    min-height:auto;
+  }
+
+}
