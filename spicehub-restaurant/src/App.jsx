@@ -1,12 +1,12 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Menu from "./components/Menu";
-import Gallery from "./components/Gallery";
-import Reviews from "./components/Reviews";
-import Reservation from "./components/Reservation";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import Navbar from "./Components/Navbar";
+import Hero from "./Components/Hero";
+import About from "./Components/About";
+import Menu from "./Components/Menu";
+import Gallery from "./Components/Gallery";
+import Reviews from "./Components/Reviews";
+import Reservation from "./Components/Reservation";
+import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
