@@ -1,12 +1,12 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Categories from "./components/Categories";
-import FeaturedProducts from "./components/FeaturedProducts";
-import Collection from "./components/Collection";
-import Testimonials from "./components/Testimonials";
-import Newsletter from "./components/Newsletter";
-import Footer from "./components/Footer";
-import FloatingCart from "./components/FloatingCart";
+import Navbar from "./Components/Navbar";
+import Hero from "./Components/Hero";
+import Categories from "./Components/Categories";
+import FeaturedProducts from "./Components/FeaturedProducts";
+import Collection from "./Components/Collection";
+import Testimonials from "./Components/Testimonials";
+import Newsletter from "./Components/Newsletter";
+import Footer from "./Components/Footer";
+import FloatingCart from "./Components/FloatingCart";
 
 function App() {
   return (
