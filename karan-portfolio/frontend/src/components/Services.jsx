@@ -22,7 +22,7 @@ const Services = () => {
 
       const res =
       await axios.get(
-        "http://localhost:5000/api/content"
+        "https://karan-portfolio-backend.onrender.com/api/content"
       );
 
       setContent(res.data);
