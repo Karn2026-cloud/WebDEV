@@ -31,7 +31,7 @@ async()=>{
 
 const res =
 await axios.get(
-"https://webdev-1-jsp7.onrender.com/api/settings"
+"http://localhost:5000/api/settings"
 );
 
 if(res.data){
@@ -46,7 +46,7 @@ const save =
 async()=>{
 
 await axios.put(
-"https://webdev-1-jsp7.onrender.com/api/settings",
+"http://localhost:5000/api/settings",
 form
 );
 

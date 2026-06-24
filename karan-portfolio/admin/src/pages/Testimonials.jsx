@@ -28,7 +28,7 @@ async()=>{
 
 const res =
 await axios.get(
-"https://webdev-1-jsp7.onrender.com/api/testimonials"
+"http://localhost:5000/api/testimonials"
 );
 
 setItems(res.data);
@@ -39,7 +39,7 @@ const add =
 async()=>{
 
 await axios.post(
-"https://webdev-1-jsp7.onrender.com/api/testimonials",
+"http://localhost:5000/api/testimonials",
 form
 );
 
@@ -51,7 +51,7 @@ const remove =
 async(id)=>{
 
 await axios.delete(
-`https://webdev-1-jsp7.onrender.com/api/testimonials/${id}`
+`http://localhost:5000/api/testimonials/${id}`
 );
 
 load();

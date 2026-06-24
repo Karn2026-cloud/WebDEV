@@ -17,7 +17,7 @@ const Projects = () => {
     try {
 
       const res = await axios.get(
-        "https://webdev-1-jsp7.onrender.com/api/projects"
+        "http://localhost:5000/api/projects"
       );
 
       setProjects(res.data);

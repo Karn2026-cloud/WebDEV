@@ -21,7 +21,7 @@ const Dashboard = () => {
 
     const res =
     await axios.get(
-      "https://webdev-1-jsp7.onrender.com/api/dashboard/stats"
+      "http://localhost:5000/api/dashboard/stats"
     );
 
     setStats(res.data);

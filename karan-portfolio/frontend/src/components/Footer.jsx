@@ -20,7 +20,7 @@ useState({});
 useEffect(()=>{
 
 axios.get(
-"https://webdev-1-jsp7.onrender.com/api/settings"
+"http://localhost:5000/api/settings"
 )
 .then(res=>{
 
@@ -38,12 +38,16 @@ return(
 
 <div className="container">
 
-<h2 className="footer-logo">
+<div className="footer-brand">
 
-Karan.dev
+  <img
+    src="/src/assets/komsyte-logo.jpg"
+    alt="KOMSYTE"
+  />
 
-</h2>
+ 
 
+</div>
 <div className="footer-socials">
 
 <a

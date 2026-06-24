@@ -22,7 +22,7 @@ const Services = () => {
 
       const res =
       await axios.get(
-        "https://webdev-1-jsp7.onrender.com/api/content"
+        "http://localhost:5000/api/content"
       );
 
       setContent(res.data);
@@ -41,7 +41,7 @@ const Services = () => {
 
       const res =
       await axios.get(
-        "https://webdev-1-jsp7.onrender.com/api/pricing"
+        "http://localhost:5000/api/pricing"
       );
 
       setPlans(res.data);

@@ -37,7 +37,7 @@ const Messages = () => {
 
       const res =
         await axios.get(
-          "https://webdev-1-jsp7.onrender.com/api/messages"
+          "http://localhost:5000/api/messages"
         );
 
       setMessages(res.data);
@@ -75,7 +75,7 @@ const Messages = () => {
 
       await axios.post(
 
-        "https://webdev-1-jsp7.onrender.com/api/email/send",
+        "http://localhost:5000/api/email/send",
 
         {
           to: selectedEmail,

@@ -8,7 +8,7 @@ const About = () => {
   useEffect(() => {
 
     axios
-      .get("https://webdev-1-jsp7.onrender.com/api/content")
+      .get("http://localhost:5000/api/content")
       .then((res) => {
         setContent(res.data);
       });

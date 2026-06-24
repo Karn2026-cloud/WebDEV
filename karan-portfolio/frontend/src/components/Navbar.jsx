@@ -8,9 +8,14 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="container">
 
-        <h2 className="logo">
-          Karan<span>.dev</span>
-        </h2>
+        <div className="logo">
+  <img
+    src="/src/assets/komsyte-logo.jpg"
+    alt="KOMSYTE"
+  />
+
+
+</div>
 
         <div className="nav-links">
           <a href="#home">Home</a>
