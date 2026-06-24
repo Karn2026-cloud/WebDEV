@@ -20,7 +20,7 @@ useState({});
 useEffect(()=>{
 
 axios.get(
-"http://localhost:5000/api/settings"
+"https://karan-portfolio-backend.onrender.com/api/settings"
 )
 .then(res=>{
 
