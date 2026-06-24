@@ -40,11 +40,7 @@ return(
 
 <div className="footer-brand">
 
-  <img
-    src="/src/assets/komsyte-logo.jpg"
-    alt="KOMSYTE"
-  />
-
+  <img src="/komsyte-logo.jpg" alt="KOMSYTE" />
  
 
 </div>
