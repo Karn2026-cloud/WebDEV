@@ -32,7 +32,7 @@ e.preventDefault();
 try{
 
 await axios.post(
-"http://localhost:5000/api/messages",
+"https://karan-portfolio-backend.onrender.com/api/messages",
 form
 );
 
