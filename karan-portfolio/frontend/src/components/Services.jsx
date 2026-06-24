@@ -41,7 +41,7 @@ const Services = () => {
 
       const res =
       await axios.get(
-        "http://localhost:5000/api/pricing"
+        "https://karan-portfolio-backend.onrender.com/api/pricing"
       );
 
       setPlans(res.data);
