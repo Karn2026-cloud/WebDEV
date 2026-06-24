@@ -9,11 +9,7 @@ const Navbar = () => {
       <div className="container">
 
         <div className="logo">
-  <img
-    src="../assets/komsyte-logo.jpg"
-    alt="KOMSYTE"
-  />
-
+ <img src="/komsyte-logo.jpg" alt="KOMSYTE" />
 
 </div>
 
