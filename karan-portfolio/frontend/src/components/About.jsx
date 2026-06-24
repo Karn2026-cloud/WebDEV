@@ -8,7 +8,7 @@ const About = () => {
   useEffect(() => {
 
     axios
-      .get("http://localhost:5000/api/content")
+      .get("https://karan-portfolio-backend.onrender.com/api/content")
       .then((res) => {
         setContent(res.data);
       });
