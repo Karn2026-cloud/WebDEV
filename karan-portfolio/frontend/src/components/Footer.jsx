@@ -20,7 +20,7 @@ useState({});
 useEffect(()=>{
 
 axios.get(
-"https://karan-portfolio-backend.onrender.com/api/settings"
+"https://webdev-1-jsp7.onrender.com/api/settings"
 )
 .then(res=>{
 
