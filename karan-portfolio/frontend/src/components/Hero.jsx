@@ -9,7 +9,7 @@ const Hero = () => {
   useEffect(() => {
 
     axios
-      .get("https://karan-portfolio-backend.onrender.com/api/content")
+      .get("https://webdev-1-jsp7.onrender.com/api/content")
       .then((res) => {
         setContent(res.data);
       })
