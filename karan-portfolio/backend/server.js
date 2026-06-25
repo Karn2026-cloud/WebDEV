@@ -60,11 +60,6 @@ require(
 "./routes/settingRoutes"
 )
 );
-const PORT = process.env.PORT || 5000;
-
-app.listen(PORT, () => {
-  console.log(`Server Running On Port ${PORT}`);
-});
 const contentRoutes =
 require("./routes/contentRoutes");
 
@@ -72,3 +67,8 @@ app.use(
 "/api/content",
 contentRoutes
 );
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log(`Server Running On Port ${PORT}`);
+});
